@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\TaskMesh.Master\\TaskMesh.Master.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\TaskMesh.Worker\\TaskMesh.Worker.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

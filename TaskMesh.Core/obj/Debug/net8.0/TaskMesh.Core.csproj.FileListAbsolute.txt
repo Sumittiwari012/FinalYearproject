@@ -1,0 +1,11 @@
+E:\FinalYearProject\TaskMesh.Core\bin\Debug\net8.0\TaskMesh.Core.deps.json
+E:\FinalYearProject\TaskMesh.Core\bin\Debug\net8.0\TaskMesh.Core.dll
+E:\FinalYearProject\TaskMesh.Core\bin\Debug\net8.0\TaskMesh.Core.pdb
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.AssemblyInfoInputs.cache
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.AssemblyInfo.cs
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.csproj.CoreCompileInputs.cache
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.dll
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\refint\TaskMesh.Core.dll
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.pdb
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\ref\TaskMesh.Core.dll
