@@ -18,5 +18,7 @@ namespace TaskMesh.Core.Messages
         public int CurrentLoad { get; set; }
 
         public CurrentStatus WorkStatus { get; set; }
+
+        public List<Guid> ExistingProblemIds { get; set; } = new(); // ← add this
     }
 }

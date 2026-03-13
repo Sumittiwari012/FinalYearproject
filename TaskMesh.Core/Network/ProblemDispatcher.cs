@@ -27,6 +27,26 @@ namespace TaskMesh.Core.Network
         }
 
         // Send all problems to a specific worker
+        public async Task DispatchSingleToWorkerAsync(string workerId, ProblemTask problem)
+        {
+            var stream = _masterServer.GetWorkerStream(workerId);
+            if (stream == null) return;
+
+            MessageSerializer serializer = new MessageSerializer();
+
+            ProblemAssignment assignment = new ProblemAssignment
+            {
+                ProblemId = problem.ProblemId,
+                ProblemName = problem.ProblemName,
+                ProblemDescription = problem.ProblemDescription,
+                InputTestCases = problem.InputTestCases,
+                ExpectedOutputTestCases = problem.ExpectedOutputTestCases,
+                TimeLimitSeconds = (int)problem.TimeLimitSeconds
+            };
+
+            byte[] bytes = serializer.WrapWithLength(serializer.Serialize(assignment));
+            await stream.WriteAsync(bytes, 0, bytes.Length);
+        }
         public async Task DispatchToWorkerAsync(string workerId)
         {
             // Get worker stream from master

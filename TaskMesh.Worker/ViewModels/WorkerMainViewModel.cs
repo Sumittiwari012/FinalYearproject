@@ -30,6 +30,7 @@ namespace TaskMesh.Worker.ViewModels
 
             _workerClient.OnProblemReceived += problem =>
             {
+                System.Diagnostics.Debug.WriteLine($"Problem received on worker: {problem.ProblemName}");
                 App.Current.Dispatcher.Invoke(() =>
                 {
                     if (!Problems.Any(p => p.ProblemId == problem.ProblemId))
@@ -98,7 +99,14 @@ namespace TaskMesh.Worker.ViewModels
             try
             {
                 ConnectionStatus = "Connecting...";
-                await _workerClient.ConnectAsync(MasterIp, WorkerId, WorkerName);
+
+                // Send existing problem IDs to master
+                var existingIds = Problems
+                    .Select(p => p.ProblemId)
+                    .ToList();
+
+                await _workerClient.ConnectAsync(MasterIp, WorkerId,
+                    WorkerName, existingIds);
                 ConnectionStatus = "Connected";
             }
             catch (Exception ex)

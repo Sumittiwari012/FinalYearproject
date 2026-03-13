@@ -1,0 +1,7 @@
+E:\StudentSystem\TaskMesh.Worker.exe
+E:\StudentSystem\TaskMesh.Worker.dll
+E:\StudentSystem\TaskMesh.Worker.deps.json
+E:\StudentSystem\TaskMesh.Worker.runtimeconfig.json
+E:\StudentSystem\TaskMesh.Worker.pdb
+E:\StudentSystem\TaskMesh.Core.dll
+E:\StudentSystem\TaskMesh.Core.pdb

@@ -1,0 +1,7 @@
+E:\ProfessorSystem\TaskMesh.Master.exe
+E:\ProfessorSystem\TaskMesh.Master.dll
+E:\ProfessorSystem\TaskMesh.Master.deps.json
+E:\ProfessorSystem\TaskMesh.Master.runtimeconfig.json
+E:\ProfessorSystem\TaskMesh.Master.pdb
+E:\ProfessorSystem\TaskMesh.Core.dll
+E:\ProfessorSystem\TaskMesh.Core.pdb

@@ -15,7 +15,7 @@ namespace TaskMesh.Core.Network
     public class MasterServer
     {
         public event Action<JudgeResultMessage> OnResultReceived;
-        public event Action<string, string, string> OnWorkerRegistered;
+        public event Action<string, string, string, List<Guid>> OnWorkerRegistered;
         private Dictionary<string, NetworkStream> _workerStreams
     = new Dictionary<string, NetworkStream>();
         const int port = 9000; // example port
@@ -65,7 +65,11 @@ namespace TaskMesh.Core.Network
                 existingWorker.LastHeartbeat = DateTime.UtcNow;
             }
             _workerStreams[request.WorkerId] = stream;
-            OnWorkerRegistered?.Invoke(request.WorkerId, request.IpAddress, request.WorkerName);
+            OnWorkerRegistered?.Invoke(
+    request.WorkerId,
+    request.IpAddress,
+    request.WorkerName,
+    request.ExistingProblemIds);
             RegisterResponse response = new RegisterResponse
             {
                 IsSuccess = true,

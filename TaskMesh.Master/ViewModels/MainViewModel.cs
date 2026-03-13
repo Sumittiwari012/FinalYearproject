@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using TaskMesh.Core.Messages;
 using TaskMesh.Core.Models;
@@ -16,6 +17,10 @@ namespace TaskMesh.Master.ViewModels
     public class MainViewModel : INotifyPropertyChanged
     {
         // Services
+        public event Action OnResultUpdated;
+        private List<ProblemTask> _fullProblems = new List<ProblemTask>();
+        private Dictionary<string, HashSet<Guid>> _workerProblemSets = new Dictionary<string, HashSet<Guid>>();
+
         public event Action ScoreboardColumnsChanged;
         public ObservableCollection<ScoreboardEntry> Scoreboard { get; } = new();
         private MasterServer _masterServer = new MasterServer();
@@ -32,6 +37,12 @@ namespace TaskMesh.Master.ViewModels
 
         // Properties
         private string _serverStatus = "Server Stopped";
+        private ProblemViewModel _selectedProblem;
+        public ProblemViewModel SelectedProblem
+        {
+            get => _selectedProblem;
+            set => SetProperty(ref _selectedProblem, value);
+        }
         public string ServerStatus
         {
             get => _serverStatus;
@@ -72,8 +83,12 @@ namespace TaskMesh.Master.ViewModels
                 _dispatcher = new ProblemDispatcher(_masterServer);
 
                 // When worker registers → add to UI + dispatch problems
-                _masterServer.OnWorkerRegistered += async (workerId, ipAddress,workerName) =>
+                _masterServer.OnWorkerRegistered += async (workerId, ipAddress, workerName, existingIds) =>
                 {
+                    System.Diagnostics.Debug.WriteLine($"Worker registered: {workerId}");
+                    System.Diagnostics.Debug.WriteLine($"Full problems count: {_fullProblems.Count}");
+                    System.Diagnostics.Debug.WriteLine($"Existing IDs from worker: {existingIds.Count}");
+                    await Task.Delay(500);
                     App.Current.Dispatcher.Invoke(() =>
                     {
                         if (!Workers.Any(w => w.WorkerId == workerId))
@@ -83,30 +98,32 @@ namespace TaskMesh.Master.ViewModels
                                 WorkerId = workerId,
                                 WorkerName = workerName,
                                 IpAddress = ipAddress,
-                                Status = WorkerStatus.Online,
-                                CurrentLoad = 0
+                                Status = WorkerStatus.Online
                             });
                             GetOrCreateEntry(workerId, workerName);
-
-                            // Add pending columns for existing problems
                             ScoreboardColumnsChanged?.Invoke();
                         }
                     });
 
-                    // Dispatch all current problems to this worker
-                    foreach (var problem in Problems)
+                    // Initialize worker set from what they sent
+                    _workerProblemSets[workerId] = new HashSet<Guid>(existingIds);
+
+                    // Calculate missing = master set - worker set
+                    var missingProblems = _fullProblems
+                        .Where(p => !_workerProblemSets[workerId].Contains(p.ProblemId))
+                        .ToList();
+
+                    // Send only missing
+                    foreach (var problem in missingProblems)
                     {
-                        _dispatcher.AddProblem(new ProblemTask
-                        {
-                            ProblemId = problem.ProblemId,
-                            ProblemName = problem.ProblemName
-                        });
+                        System.Diagnostics.Debug.WriteLine($"Dispatching: {problem.ProblemName} to {workerId}");
+                        await _dispatcher.DispatchSingleToWorkerAsync(workerId, problem);
+                        _workerProblemSets[workerId].Add(problem.ProblemId);
                     }
-                    await _dispatcher.DispatchToWorkerAsync(workerId);
                 };
 
                 // When result arrives → update UI
-                _masterServer.OnResultReceived += result =>
+                _masterServer.OnResultReceived +=async( result )=>
                 {
                     App.Current.Dispatcher.Invoke(() =>
                     {
@@ -118,7 +135,7 @@ namespace TaskMesh.Master.ViewModels
 
                         var entry = GetOrCreateEntry(result.WorkerId, studentName);
                         entry.SetResult(problemName, result.IsSuccess);
-
+                        OnResultUpdated?.Invoke();
                         if (problem != null)
                         {
                             problem.TestCasePassCount = result.TestCasePassCount;
@@ -127,6 +144,20 @@ namespace TaskMesh.Master.ViewModels
                                 ProblemStatus.Solved : ProblemStatus.Failed;
                         }
                     });
+                    if (_workerProblemSets.ContainsKey(result.WorkerId))
+                    {
+                        var workerSet = _workerProblemSets[result.WorkerId];
+                        var missingProblems = _fullProblems
+                            .Where(p => !workerSet.Contains(p.ProblemId))
+                            .ToList();
+
+                        foreach (var problem in missingProblems)
+                        {
+                            await _dispatcher.DispatchSingleToWorkerAsync(
+                                result.WorkerId, problem);
+                            workerSet.Add(problem.ProblemId);
+                        }
+                    }
                 };
 
                 // Start server on background thread
@@ -154,20 +185,24 @@ namespace TaskMesh.Master.ViewModels
                 TimeLimitSeconds = dialog.TimeLimit
             };
 
+            // Just store it
+            _fullProblems.Add(problem);
+            _dispatcher.AddProblem(problem);
+
+            // Add to UI
             Problems.Add(new ProblemViewModel
             {
                 ProblemId = problem.ProblemId,
                 ProblemName = problem.ProblemName,
+                ProblemDescription = problem.ProblemDescription,
+                InputTestCases = problem.InputTestCases,
+                ExpectedOutputTestCases = problem.ExpectedOutputTestCases,
+                TimeLimitSeconds = problem.TimeLimitSeconds,
                 Status = ProblemStatus.Pending,
                 TotalTestCaseCount = problem.InputTestCases.Count
             });
 
-            if (_dispatcher != null)
-            {
-                _dispatcher.AddProblem(problem);
-                foreach (var worker in Workers)
-                    await _dispatcher.DispatchToWorkerAsync(worker.WorkerId);
-            }
+            ScoreboardColumnsChanged?.Invoke();
         }
 
         #region INotifyPropertyChanged

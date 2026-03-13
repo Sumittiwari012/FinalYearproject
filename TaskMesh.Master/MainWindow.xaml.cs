@@ -25,6 +25,8 @@ namespace TaskMesh.Master
             {
                 App.Current.Dispatcher.Invoke(() => RefreshScoreboardColumns());
             };
+            _viewModel.OnResultUpdated += () =>
+        App.Current.Dispatcher.Invoke(() => ScoreboardGrid.Items.Refresh());
         }
 
         private void RefreshScoreboardColumns()

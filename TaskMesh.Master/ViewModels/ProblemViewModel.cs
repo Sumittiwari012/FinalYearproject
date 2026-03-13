@@ -18,7 +18,12 @@ namespace TaskMesh.Master.ViewModels
         private int _totalTestCaseCount;
         private int _testCasePassCount;
         private ProblemStatus _status;
+        public string ProblemDescription { get; set; }
+        public List<string> InputTestCases { get; set; } = new();
+        public List<string> ExpectedOutputTestCases { get; set; } = new();
+        public long TimeLimitSeconds { get; set; }
 
+        
         public Guid ProblemId
         {
             get => _problemId;

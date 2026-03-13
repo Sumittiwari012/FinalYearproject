@@ -5,6 +5,7 @@ E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.GeneratedMSBuil
 E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.AssemblyInfoInputs.cache
 E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.AssemblyInfo.cs
 E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.csproj.CoreCompileInputs.cache
+E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.sourcelink.json
 E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.dll
 E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\refint\TaskMesh.Core.dll
 E:\FinalYearProject\TaskMesh.Core\obj\Debug\net8.0\TaskMesh.Core.pdb

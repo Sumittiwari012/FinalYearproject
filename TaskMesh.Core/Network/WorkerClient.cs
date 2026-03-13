@@ -19,7 +19,7 @@ namespace TaskMesh.Core.Network
         private string _workerId;
         private string _masterIp;
         const int Port = 9000;
-        public async Task ConnectAsync(string masterIp, string workerId, string workerName)
+        public async Task ConnectAsync(string masterIp, string workerId, string workerName, List<Guid> existingProblemIds)
         {
             _masterIp = masterIp;
             _workerId = workerId;
@@ -39,7 +39,9 @@ namespace TaskMesh.Core.Network
                 WorkerName = workerName,
                 IpAddress = localIp,
                 CurrentLoad = 0,
-                WorkStatus = CurrentStatus.Available
+                WorkStatus = CurrentStatus.Available,
+                ExistingProblemIds = existingProblemIds // ← add this
+
             };
 
             byte[] bytes = _serializer.WrapWithLength(_serializer.Serialize(request));

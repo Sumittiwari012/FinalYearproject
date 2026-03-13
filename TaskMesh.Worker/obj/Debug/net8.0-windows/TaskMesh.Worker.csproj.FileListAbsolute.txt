@@ -17,6 +17,7 @@ E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.Worker.Gen
 E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.Worker.AssemblyInfoInputs.cache
 E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.Worker.AssemblyInfo.cs
 E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.Worker.csproj.CoreCompileInputs.cache
+E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.Worker.sourcelink.json
 E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.F910612B.Up2Date
 E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\TaskMesh.Worker.dll
 E:\FinalYearProject\TaskMesh.Worker\obj\Debug\net8.0-windows\refint\TaskMesh.Worker.dll
