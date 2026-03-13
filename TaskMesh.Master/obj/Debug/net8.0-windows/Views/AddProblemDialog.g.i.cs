@@ -92,7 +92,7 @@ namespace TaskMesh.Master.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TaskMesh.Master;V1.0.0.0;component/views/addproblemdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TaskMesh.Master;component/views/addproblemdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\AddProblemDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

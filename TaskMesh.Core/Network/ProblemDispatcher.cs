@@ -44,8 +44,10 @@ namespace TaskMesh.Core.Network
                 TimeLimitSeconds = (int)problem.TimeLimitSeconds
             };
 
-            byte[] bytes = serializer.WrapWithLength(serializer.Serialize(assignment));
-            await stream.WriteAsync(bytes, 0, bytes.Length);
+            byte[] wrapped = serializer.WrapWithTypeAndLength("PROBLEM",
+    serializer.Serialize(assignment));
+            await stream.WriteAsync(wrapped, 0, wrapped.Length);
+
         }
         public async Task DispatchToWorkerAsync(string workerId)
         {
@@ -72,6 +74,7 @@ namespace TaskMesh.Core.Network
                 };
                 byte[] bytes = _serializer.WrapWithLength(_serializer.Serialize(assignment));
                 await stream.WriteAsync(bytes, 0, bytes.Length);
+
             }
         }
     }

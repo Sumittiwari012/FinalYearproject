@@ -6,6 +6,16 @@ namespace TaskMesh.Master.ViewModels
 {
     public class ScoreboardEntry : INotifyPropertyChanged
     {
+        private bool _isFlagged;
+        public bool IsFlagged
+        {
+            get => _isFlagged;
+            set
+            {
+                _isFlagged = value;
+                OnPropertyChanged(nameof(IsFlagged));
+            }
+        }
         public string WorkerId { get; set; }
         public string StudentName { get; set; }
 

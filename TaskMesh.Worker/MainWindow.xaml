@@ -14,7 +14,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#34495E">
-            
+            <Button Content="⟳ REFRESH" Command="{Binding RefreshCommand}"
+    Width="100" Height="30" Margin="10,0"
+    Background="#8E44AD" Foreground="White" FontWeight="Bold"/>
 
             
 

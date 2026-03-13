@@ -15,6 +15,10 @@
 
         <!-- HEADER -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#2C3E50">
+            <Button Content="▶ START SESSION" Command="{Binding StartSessionCommand}"
+        Width="130" Height="30" Margin="10,0"
+        Background="#8E44AD" Foreground="White" FontWeight="Bold"/>
+
             <TextBlock Text="TaskMesh Master" Foreground="White"
                        FontSize="20" Margin="20,0,20,0" VerticalAlignment="Center"/>
             <Button Content="START SERVER" Command="{Binding StartServerCommand}"
@@ -167,22 +171,47 @@
                           ItemsSource="{Binding Scoreboard}"
                           AutoGenerateColumns="False"
                           IsReadOnly="True"
-                          Background="Transparent"
+                          Background="DimGray"
                           Foreground="Black"
                           BorderThickness="0"
-                          RowBackground="#2C3E50"
-                          AlternatingRowBackground="#34495E"
                           GridLinesVisibility="All"
                           HorizontalGridLinesBrush="#455A64"
                           VerticalGridLinesBrush="#455A64"
                           ColumnHeaderHeight="30">
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="0"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.CellStyle>
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Background" Value="#2C3E50"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsFlagged}" Value="True">
+                                    <Setter Property="Background" Value="#C0392B"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.RowStyle>
+
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ID"
-                                            Binding="{Binding WorkerId}"
-                                            Width="80"/>
+                            Binding="{Binding WorkerId}"
+                            Width="80"/>
                         <DataGridTextColumn Header="Name"
-                                            Binding="{Binding StudentName}"
-                                            Width="120"/>
+                            Binding="{Binding StudentName}"
+                            Width="120"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>

@@ -7,6 +7,7 @@ using System.Windows.Input;
 using TaskMesh.Core.Execution;
 using TaskMesh.Core.Messages;
 using TaskMesh.Core.Models;
+using System.Runtime.InteropServices;
 using TaskMesh.Core.Network;
 using TaskMesh.Worker.Helper; // Ensure this matches where your RelayCommand lives
 
@@ -16,13 +17,63 @@ namespace TaskMesh.Worker.ViewModels
     {
         private readonly WorkerClient _workerClient = new WorkerClient();
         private readonly ExecutionSandBox _sandbox = new ExecutionSandBox();
+        public ICommand RefreshCommand { get; }
 
+        // In constructor:
+        private bool _canSubmit = true;
+        public bool CanSubmit
+        {
+            get => _canSubmit;
+            set
+            {
+                SetProperty(ref _canSubmit, value);
+                App.Current.Dispatcher.Invoke(
+                    System.Windows.Input.CommandManager.InvalidateRequerySuggested);
+            }
+        }
+
+        private async Task ExecuteRefresh()
+        {
+            var existingIds = Problems.Select(p => p.ProblemId).ToList();
+            await _workerClient.ConnectAsync(MasterIp, WorkerId, WorkerName, existingIds);
+        }
+        [DllImport("user32.dll")]
+        private static extern IntPtr GetForegroundWindow();
+
+        private IntPtr _workerWindowHandle;
+        private bool _sessionActive = false;
+
+        public void StartFocusMonitor(IntPtr windowHandle)
+        {
+            _workerWindowHandle = windowHandle;
+            _sessionActive = false; // ← don't start yet
+
+            _ = Task.Run(async () =>
+            {
+                while (true)
+                {
+                    await Task.Delay(500);
+
+                    if (!_sessionActive) continue; // ← wait until session starts
+
+                    var foreground = GetForegroundWindow();
+                    if (foreground != _workerWindowHandle)
+                    {
+                        CanSubmit = false;
+                        await _workerClient.SendTabSwitchAlertAsync();
+                        await Task.Delay(5000);
+                    }
+                }
+            });
+        }
         public WorkerMainViewModel(string workerId, string workerName, string masterIp)
         {
             WorkerId = workerId;
             WorkerName = workerName;
             MasterIp = masterIp;
-
+            RefreshCommand = new RelayCommand(
+            async () => await ExecuteRefresh(),
+            () => IsConnected);
             ConnectCommand = new RelayCommand(async () => await ExecuteConnect());
             SubmitSolutionCommand = new RelayCommand(
                 async () => await ExecuteSubmit(),
@@ -36,6 +87,12 @@ namespace TaskMesh.Worker.ViewModels
                     if (!Problems.Any(p => p.ProblemId == problem.ProblemId))
                         Problems.Add(problem);
                 });
+            };
+            _workerClient.OnSessionStartReceived += (minutes) =>
+            {
+                _sessionActive = true; // ← now start monitoring
+                App.Current.Dispatcher.Invoke(() =>
+                    ResultLog = $"⏱ Session started — {minutes} minutes");
             };
         }
 

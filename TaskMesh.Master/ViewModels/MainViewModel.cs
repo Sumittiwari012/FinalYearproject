@@ -53,12 +53,31 @@ namespace TaskMesh.Master.ViewModels
         public ICommand StartServerCommand { get; }
         public ICommand AddProblemCommand { get; }
 
+
+
         public MainViewModel()
         {
             StartServerCommand = new RelayCommand(() => ExecuteStartServer());
             AddProblemCommand = new RelayCommand(() => ExecuteAddProblem());
+            StartSessionCommand = new RelayCommand(() => ExecuteStartSession());
         }
-        private ScoreboardEntry GetOrCreateEntry(string workerId, string workerName)
+        public ICommand StartSessionCommand { get; }
+
+        // In constructor:
+        
+
+        private async void ExecuteStartSession()
+        {
+            var input = Microsoft.VisualBasic.Interaction.InputBox(
+                "Enter session duration (minutes):", "Start Session", "60");
+            if (!int.TryParse(input, out int minutes)) return;
+            await _masterServer.SendSessionStartAsync(minutes);
+            ServerStatus = $"Session started — {minutes} min";
+        }
+
+        // In ExecuteStartServer, hook alert:
+        
+private ScoreboardEntry GetOrCreateEntry(string workerId, string workerName)
         {
             var entry = Scoreboard.FirstOrDefault(s => s.WorkerId == workerId);
             if (entry == null)
@@ -79,6 +98,18 @@ namespace TaskMesh.Master.ViewModels
             {
                 if (_serverStarted) return;
                 _serverStarted = true;
+                _masterServer.OnTabSwitchAlert += workerId =>
+                {
+                    System.Diagnostics.Debug.WriteLine($"TAB SWITCH ALERT: {workerId}");
+                    App.Current.Dispatcher.Invoke(() =>
+                    {
+                        var entry = Scoreboard.FirstOrDefault(s => s.WorkerId == workerId);
+                        System.Diagnostics.Debug.WriteLine($"Entry found: {entry != null}, IsFlagged before: {entry?.IsFlagged}");
+                        if (entry != null) entry.IsFlagged = true;
+                        System.Diagnostics.Debug.WriteLine($"IsFlagged after: {entry?.IsFlagged}");
+                        OnResultUpdated?.Invoke();
+                    });
+                };
                 // Initialize dispatcher
                 _dispatcher = new ProblemDispatcher(_masterServer);
 

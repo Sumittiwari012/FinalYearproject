@@ -17,14 +17,21 @@ namespace TaskMesh.Worker
     /// </summary>
     public partial class MainWindow : Window
     {
+        private WorkerMainViewModel _viewModel;
+
         public MainWindow(string workerId, string workerName, string masterIp)
         {
             InitializeComponent();
-            var viewModel = new WorkerMainViewModel(workerId, workerName, masterIp);
-            DataContext = viewModel;
+            _viewModel = new WorkerMainViewModel(workerId, workerName, masterIp);
+            DataContext = _viewModel;
+            Loaded += async (s, e) => await _viewModel.ExecuteConnect();
+        }
 
-            // Wait for window to load before connecting
-            Loaded += async (s, e) => await viewModel.ExecuteConnect();
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            var handle = new System.Windows.Interop.WindowInteropHelper(this).Handle;
+            _viewModel.StartFocusMonitor(handle);
         }
     }
 }

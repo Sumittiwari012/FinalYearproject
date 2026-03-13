@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskMesh.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+355ae80f9e0531b9953a28485d10bc7ae8e51cb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62f9f8b2d362904f361e665979f8388ee9e91dde")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskMesh.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskMesh.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,3 @@
-E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\TaskMesh.Master.csproj.AssemblyReference.cache
-E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\Views\AddProblemDialog.baml
-E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\Views\AddProblemDialog.g.cs
-E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\App.g.cs
-E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\TaskMesh.Master_MarkupCompile.cache
 E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Master.exe
 E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Master.deps.json
 E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Master.runtimeconfig.json
@@ -10,8 +5,13 @@ E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Master.dll
 E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Master.pdb
 E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Core.dll
 E:\FinalYearProject\TaskMesh.Master\bin\Debug\net8.0-windows\TaskMesh.Core.pdb
+E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\TaskMesh.Master.csproj.AssemblyReference.cache
+E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\Views\AddProblemDialog.baml
 E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\MainWindow.g.cs
+E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\Views\AddProblemDialog.g.cs
+E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\App.g.cs
 E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\TaskMesh.Master_MarkupCompile.cache
 E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\TaskMesh.Master_MarkupCompile.lref
 E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\MainWindow.baml
 E:\FinalYearProject\TaskMesh.Master\obj\Debug\net8.0-windows\TaskMesh.Master.g.resources
