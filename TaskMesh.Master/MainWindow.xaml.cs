@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using TaskMesh.Core.Messages;
 using TaskMesh.Master.Helpers;
 using TaskMesh.Master.ViewModels;
 
@@ -28,7 +29,15 @@ namespace TaskMesh.Master
             _viewModel.OnResultUpdated += () =>
         App.Current.Dispatcher.Invoke(() => ScoreboardGrid.Items.Refresh());
         }
+        private async void AddPeer_Click(object sender, RoutedEventArgs e)
+        {
+            string ip = PeerIpBox.Text.Trim();
+            if (string.IsNullOrEmpty(ip)) return;
 
+            var peer = new MasterPeerInfo { IpAddress = ip };
+            _viewModel.AddPeer(peer);
+            await _viewModel.ConnectToPeerAsync(ip);
+        }
         private void RefreshScoreboardColumns()
         {
             App.Current.Dispatcher.Invoke(() =>

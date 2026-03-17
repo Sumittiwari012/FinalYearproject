@@ -30,8 +30,12 @@ namespace TaskMesh.Worker
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
-            var handle = new System.Windows.Interop.WindowInteropHelper(this).Handle;
-            _viewModel.StartFocusMonitor(handle);
+
+            this.Deactivated += async (s, ev) =>
+            {
+                if (!_viewModel.SessionActive) return;
+                await _viewModel.HandleFocusLost();
+            };
         }
     }
 }

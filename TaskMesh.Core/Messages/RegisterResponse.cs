@@ -13,5 +13,6 @@ namespace TaskMesh.Core.Messages
 
         public string WelcomeMessage { get; set; }
         public string? ErrorMessage { get; set; }
+        public List<MasterPeerInfo> BackupMasters { get; set; } = new();
     }
 }

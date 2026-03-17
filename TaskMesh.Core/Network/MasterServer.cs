@@ -23,7 +23,23 @@ namespace TaskMesh.Core.Network
         private List<WorkerNode> _connectedWorkers = new List<WorkerNode>();
         private MessageSerializer _serializer = new MessageSerializer();
         public event Action<string> OnTabSwitchAlert; // workerId
+        private List<MasterPeerInfo> _peerMasters = new();
+        public void AddPeer(MasterPeerInfo peer)
+        {
+            _peerMasters.Add(peer);
+        }
+        public async Task SendSessionEndAsync()
+        {
+            var msg = new SessionStartMessage { DurationMinutes = 0 };
+            byte[] data = _serializer.Serialize(msg);
+            byte[] wrapped = _serializer.WrapWithTypeAndLength("SESSION_END", data);
 
+            foreach (var stream in _workerStreams.Values)
+            {
+                try { await stream.WriteAsync(wrapped, 0, wrapped.Length); }
+                catch { }
+            }
+        }
         public async Task SendSessionStartAsync(int durationMinutes)
         {
             var msg = new SessionStartMessage { DurationMinutes = durationMinutes };
@@ -47,6 +63,19 @@ namespace TaskMesh.Core.Network
                 _ = Task.Run(() => HandleWorkerAsync(client));
             }
 
+        }
+
+        public async Task SendSessionStartToWorkerAsync(string workerId, int remainingMinutes)
+        {
+            var stream = GetWorkerStream(workerId);
+            if (stream == null) return;
+
+            var msg = new SessionStartMessage { DurationMinutes = remainingMinutes };
+            byte[] data = _serializer.Serialize(msg);
+            byte[] wrapped = _serializer.WrapWithTypeAndLength("SESSION_START", data);
+
+            try { await stream.WriteAsync(wrapped, 0, wrapped.Length); }
+            catch { }
         }
         public async Task HandleWorkerAsync(TcpClient client)
         {
@@ -87,7 +116,8 @@ namespace TaskMesh.Core.Network
             RegisterResponse response = new RegisterResponse
             {
                 IsSuccess = true,
-                WelcomeMessage = $"Welcome {request.WorkerId}"
+                WelcomeMessage = $"Welcome {request.WorkerId}",
+                BackupMasters = _peerMasters // ← send peer list to worker
             };
             byte[] responseBytes = _serializer.Serialize(response);
             byte[] wrappedBytes = _serializer.WrapWithLength(responseBytes);

@@ -17,6 +17,9 @@ namespace TaskMesh.Worker.ViewModels
     {
         private readonly WorkerClient _workerClient = new WorkerClient();
         private readonly ExecutionSandBox _sandbox = new ExecutionSandBox();
+        public bool SessionActive => _sessionActive;
+        private bool _sessionActive = false;
+        private int _sessionRemainingSeconds = 0;
         public ICommand RefreshCommand { get; }
 
         // In constructor:
@@ -35,36 +38,37 @@ namespace TaskMesh.Worker.ViewModels
         private async Task ExecuteRefresh()
         {
             var existingIds = Problems.Select(p => p.ProblemId).ToList();
-            await _workerClient.ConnectAsync(MasterIp, WorkerId, WorkerName, existingIds);
-        }
-        [DllImport("user32.dll")]
-        private static extern IntPtr GetForegroundWindow();
-
-        private IntPtr _workerWindowHandle;
-        private bool _sessionActive = false;
-
-        public void StartFocusMonitor(IntPtr windowHandle)
-        {
-            _workerWindowHandle = windowHandle;
-            _sessionActive = false; // ← don't start yet
-
-            _ = Task.Run(async () =>
+            try
             {
-                while (true)
+                await _workerClient.ConnectAsync(MasterIp, WorkerId, WorkerName, existingIds);
+                ConnectionStatus = "Connected";
+            }
+            catch
+            {
+                // Primary failed — try failover
+                ConnectionStatus = "Primary master down, trying backup...";
+                bool recovered = await _workerClient.TryFailoverAsync();
+                if (recovered)
                 {
-                    await Task.Delay(500);
-
-                    if (!_sessionActive) continue; // ← wait until session starts
-
-                    var foreground = GetForegroundWindow();
-                    if (foreground != _workerWindowHandle)
-                    {
-                        CanSubmit = false;
-                        await _workerClient.SendTabSwitchAlertAsync();
-                        await Task.Delay(5000);
-                    }
+                    ConnectionStatus = "Connected to backup master";
+                    ResultLog = "⚠ Reconnected to backup master";
                 }
-            });
+                else
+                {
+                    ConnectionStatus = "Connection Failed";
+                    ResultLog = "❌ All masters unreachable";
+                }
+            }
+        }   
+
+
+        // ADD this method ✅
+        public async Task HandleFocusLost()
+        {
+            await Task.Delay(300);
+            if (!App.Current.MainWindow.IsLoaded) return;
+            CanSubmit = false;
+            await _workerClient.SendTabSwitchAlertAsync();
         }
         public WorkerMainViewModel(string workerId, string workerName, string masterIp)
         {
@@ -76,8 +80,8 @@ namespace TaskMesh.Worker.ViewModels
             () => IsConnected);
             ConnectCommand = new RelayCommand(async () => await ExecuteConnect());
             SubmitSolutionCommand = new RelayCommand(
-                async () => await ExecuteSubmit(),
-                () => IsConnected && SelectedProblem != null);
+    async () => await ExecuteSubmit(),
+    () => IsConnected && SelectedProblem != null && CanSubmit);
 
             _workerClient.OnProblemReceived += problem =>
             {
