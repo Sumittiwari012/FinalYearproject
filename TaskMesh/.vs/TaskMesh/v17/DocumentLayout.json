@@ -3,19 +3,88 @@
   "WorkspaceRootPath": "E:\\FinalYearProject\\TaskMesh\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\masterpeerserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\heartbeatmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\messageserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\models\\workernode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\workerclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\problemdispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\masterserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\models\\taskresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\models\\problemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\models\\judgeresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\models\\compressiontask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\taskresultmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\taskassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\tabswitchalertmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\sessionstartmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\problemassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\peersyncmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\masterpeerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\judgeresultmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\backupmasterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\execution\\testcaserunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\execution\\javacompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\execution\\executionsandbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B55DA6FF-2D4E-4BCE-9AE3-EABC01273006}|..\\TaskMesh.Worker\\TaskMesh.Worker.csproj|e:\\finalyearproject\\taskmesh.worker\\taskmesh.worker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5AE5D99C-FCDF-4FDE-87A3-F48C61E00C5E}|..\\TaskMesh.Master\\TaskMesh.Master.csproj|e:\\finalyearproject\\taskmesh.master\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\workerclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B55DA6FF-2D4E-4BCE-9AE3-EABC01273006}|..\\TaskMesh.Worker\\TaskMesh.Worker.csproj|e:\\finalyearproject\\taskmesh.worker\\viewmodels\\workermainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\masterserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B55DA6FF-2D4E-4BCE-9AE3-EABC01273006}|..\\TaskMesh.Worker\\TaskMesh.Worker.csproj|e:\\finalyearproject\\taskmesh.worker\\views\\workerlogindialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
@@ -30,49 +99,16 @@
       "AbsoluteMoniker": "D:0:0:{5AE5D99C-FCDF-4FDE-87A3-F48C61E00C5E}|..\\TaskMesh.Master\\TaskMesh.Master.csproj|e:\\finalyearproject\\taskmesh.master\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\masterpeerserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\backupmasterlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\masterpeerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\peersyncmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5AE5D99C-FCDF-4FDE-87A3-F48C61E00C5E}|..\\TaskMesh.Master\\TaskMesh.Master.csproj|e:\\finalyearproject\\taskmesh.master\\viewmodels\\scoreboardentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B55DA6FF-2D4E-4BCE-9AE3-EABC01273006}|..\\TaskMesh.Worker\\TaskMesh.Worker.csproj|e:\\finalyearproject\\taskmesh.worker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\problemdispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\network\\messageserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\tabswitchalertmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\sessionstartmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\messages\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5AE5D99C-FCDF-4FDE-87A3-F48C61E00C5E}|..\\TaskMesh.Master\\TaskMesh.Master.csproj|e:\\finalyearproject\\taskmesh.master\\viewmodels\\problemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5AE5D99C-FCDF-4FDE-87A3-F48C61E00C5E}|..\\TaskMesh.Master\\TaskMesh.Master.csproj|e:\\finalyearproject\\taskmesh.master\\helper\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F15785AB-F3DC-4836-B334-EC2F2D162292}|..\\TaskMesh.Core\\TaskMesh.Core.csproj|e:\\finalyearproject\\taskmesh.core\\models\\judgeresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 30,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,8 +154,164 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskMesh.Worker",
+              "DocumentIndex": 1,
+              "Title": "HeartbeatMonitor.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\HeartbeatMonitor.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Network\\HeartbeatMonitor.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\HeartbeatMonitor.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Network\\HeartbeatMonitor.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA3wD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:02:15.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorkerNode.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\WorkerNode.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Models\\WorkerNode.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\WorkerNode.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Models\\WorkerNode.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:02:05.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskResult.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\TaskResult.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Models\\TaskResult.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\TaskResult.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Models\\TaskResult.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA6wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:01:57.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProblemTask.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\ProblemTask.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Models\\ProblemTask.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\ProblemTask.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Models\\ProblemTask.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:01:44.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompressionTask.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\CompressionTask.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Models\\CompressionTask.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\CompressionTask.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Models\\CompressionTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:01:31.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TaskResultMessage.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\TaskResultMessage.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\TaskResultMessage.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\TaskResultMessage.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\TaskResultMessage.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:01:21.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TaskAssignment.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\TaskAssignment.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\TaskAssignment.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\TaskAssignment.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\TaskAssignment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T20:01:13.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProblemAssignment.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\ProblemAssignment.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\ProblemAssignment.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\ProblemAssignment.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\ProblemAssignment.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA6wBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:59:50.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "JudgeResultMessage.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\JudgeResultMessage.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\JudgeResultMessage.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\JudgeResultMessage.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\JudgeResultMessage.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:59:26.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TestCaseRunner.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Execution\\TestCaseRunner.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Execution\\TestCaseRunner.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Execution\\TestCaseRunner.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Execution\\TestCaseRunner.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:59:09.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "JavaCompiler.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Execution\\JavaCompiler.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Execution\\JavaCompiler.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Execution\\JavaCompiler.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Execution\\JavaCompiler.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAuwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:59:00.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ExecutionSandBox.cs",
+              "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Execution\\ExecutionSandBox.cs",
+              "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Execution\\ExecutionSandBox.cs",
+              "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Execution\\ExecutionSandBox.cs",
+              "RelativeToolTip": "..\\TaskMesh.Core\\Execution\\ExecutionSandBox.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T19:58:38.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TaskMesh.Worker.csproj",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Worker\\TaskMesh.Worker.csproj",
               "RelativeDocumentMoniker": "..\\TaskMesh.Worker\\TaskMesh.Worker.csproj",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Worker\\TaskMesh.Worker.csproj",
@@ -131,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 26,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Master\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Master\\ViewModels\\MainViewModel.cs",
@@ -139,12 +331,11 @@
               "RelativeToolTip": "..\\TaskMesh.Master\\ViewModels\\MainViewModel.cs",
               "ViewState": "AgIAAOcBAAAAAAAAAAAqwDoBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T11:25:53.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T11:25:53.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 27,
               "Title": "WorkerMainViewModel.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Worker\\ViewModels\\WorkerMainViewModel.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Worker\\ViewModels\\WorkerMainViewModel.cs",
@@ -152,62 +343,59 @@
               "RelativeToolTip": "..\\TaskMesh.Worker\\ViewModels\\WorkerMainViewModel.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAIwD0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:13:04.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T09:13:04.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MasterServer.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\MasterServer.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Network\\MasterServer.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\MasterServer.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Network\\MasterServer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAADwvykAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T09:14:03.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "WorkerClient.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\WorkerClient.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Network\\WorkerClient.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\WorkerClient.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Network\\WorkerClient.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwCgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALkAAAAAAAAAAAAAwMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T09:11:40.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 28,
               "Title": "WorkerLoginDialog.xaml",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Worker\\views\\WorkerLoginDialog.xaml",
               "RelativeDocumentMoniker": "..\\TaskMesh.Worker\\views\\WorkerLoginDialog.xaml",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Worker\\views\\WorkerLoginDialog.xaml",
               "RelativeToolTip": "..\\TaskMesh.Worker\\views\\WorkerLoginDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-16T09:23:24.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T09:23:24.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 29,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Master\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\TaskMesh.Master\\MainWindow.xaml",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Master\\MainWindow.xaml",
               "RelativeToolTip": "..\\TaskMesh.Master\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-12T11:50:44.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T11:50:44.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 31,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Master\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Master\\MainWindow.xaml.cs",
@@ -219,19 +407,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "BackupMasterList.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\BackupMasterList.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\BackupMasterList.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\BackupMasterList.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\BackupMasterList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T05:13:36.117Z"
+              "WhenOpened": "2026-03-16T05:13:36.117Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Worker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Worker\\MainWindow.xaml.cs",
@@ -239,60 +428,63 @@
               "RelativeToolTip": "..\\TaskMesh.Worker\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:19:29.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T19:19:29.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "MasterPeerServer.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\MasterPeerServer.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Network\\MasterPeerServer.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\MasterPeerServer.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Network\\MasterPeerServer.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAIwG4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwGkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T05:14:38.236Z"
+              "WhenOpened": "2026-03-16T05:14:38.236Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "RegisterResponse.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\RegisterResponse.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\RegisterResponse.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\RegisterResponse.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\RegisterResponse.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T05:15:04.461Z"
+              "WhenOpened": "2026-03-16T05:15:04.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "MasterPeerInfo.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\MasterPeerInfo.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\MasterPeerInfo.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\MasterPeerInfo.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\MasterPeerInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T05:12:47.699Z"
+              "WhenOpened": "2026-03-16T05:12:47.699Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "PeerSyncMessage.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\PeerSyncMessage.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\PeerSyncMessage.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\PeerSyncMessage.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\PeerSyncMessage.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T05:12:11.979Z"
+              "WhenOpened": "2026-03-16T05:12:11.979Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 32,
               "Title": "ScoreboardEntry.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Master\\ViewModels\\ScoreboardEntry.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Master\\ViewModels\\ScoreboardEntry.cs",
@@ -304,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 33,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Worker\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\TaskMesh.Worker\\MainWindow.xaml",
@@ -315,67 +507,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "ProblemDispatcher.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\ProblemDispatcher.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Network\\ProblemDispatcher.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\ProblemDispatcher.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Network\\ProblemDispatcher.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAEwDAAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:28:18.501Z"
+              "WhenOpened": "2026-03-13T09:28:18.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 2,
               "Title": "MessageSerializer.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\MessageSerializer.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Network\\MessageSerializer.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Network\\MessageSerializer.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Network\\MessageSerializer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAiwDYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:14:53.508Z"
+              "WhenOpened": "2026-03-13T19:14:53.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 13,
               "Title": "TabSwitchAlertMessage.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\TabSwitchAlertMessage.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\TabSwitchAlertMessage.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\TabSwitchAlertMessage.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\TabSwitchAlertMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:14:10.979Z"
+              "WhenOpened": "2026-03-13T19:14:10.979Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 14,
               "Title": "SessionStartMessage.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\SessionStartMessage.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\SessionStartMessage.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\SessionStartMessage.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\SessionStartMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T19:13:28.86Z"
+              "WhenOpened": "2026-03-13T19:13:28.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Messages\\RegisterRequest.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Messages\\RegisterRequest.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Messages\\RegisterRequest.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA8wAkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA4wBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T09:11:12.241Z"
+              "WhenOpened": "2026-03-13T09:11:12.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 35,
               "Title": "NullToVisibilityConverter.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Master\\Helper\\NullToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Master\\Helper\\NullToVisibilityConverter.cs",
@@ -387,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
               "Title": "ProblemViewModel.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Master\\ViewModels\\ProblemViewModel.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Master\\ViewModels\\ProblemViewModel.cs",
@@ -399,15 +596,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 9,
               "Title": "JudgeResult.cs",
               "DocumentMoniker": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\JudgeResult.cs",
               "RelativeDocumentMoniker": "..\\TaskMesh.Core\\Models\\JudgeResult.cs",
               "ToolTip": "E:\\FinalYearProject\\TaskMesh.Core\\Models\\JudgeResult.cs",
               "RelativeToolTip": "..\\TaskMesh.Core\\Models\\JudgeResult.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA4wB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T09:02:55.029Z"
+              "WhenOpened": "2026-03-12T09:02:55.029Z",
+              "EditorCaption": ""
             }
           ]
         }

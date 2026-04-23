@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskMesh.Master")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a217d899f0bba52eadb74c379d8f8ac42b7a6e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6d27f0a9504d028f18048f9184815aea09fcad8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskMesh.Master")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskMesh.Master")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
